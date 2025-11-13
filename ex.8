@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+    cadeia nome, senha, usuario, senhausuario
+    nome = "admin"
+    senha = "senai123"
+    escreva("------ tela de login ------\n")
+    escreva(" usuario: ")
+    leia(usuario)
+    escreva(" senha : ")
+    leia(senhausuario)
+    se((usuario == nome) e (senhausuario == senha)){
+      escreva(" login suscedido")
+    }
+    senao
+    escreva("usuario ou senha errado, tente novamente")
+
+  }
+}
