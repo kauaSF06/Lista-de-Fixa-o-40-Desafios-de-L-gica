@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    real peso, altura, imc
+    escreva("------IMC--------\n")
+    escreva("digite seu peso: ")
+    leia(peso)
+    escreva(" digite sua altura: ")
+    leia(altura)
+    imc = (peso/(altura * altura))
+    se(imc <= 18.5){
+      escreva("esta abaixo do peso")
+
+    }
+    senao se((imc >18.5) e (imc<=24.9)){
+      escreva("peso normal")
+    }
+    senao
+    escreva(" esta em sobrepeso")
+  }
+}
