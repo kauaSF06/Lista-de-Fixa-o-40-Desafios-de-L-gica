@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro i, contador
+    escreva("numeros pares de 1 a 20: \n")
+    contador = 0
+    para(i=1; i<=20; i++){
+      se(i % 2 == 0){
+        contador++
+        escreva(i, "\n")
+      }
+
+      
+    }escreva("numero de pares entre 1 e 20 e: ", contador)
+  }
+}
