@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    inteiro num1, i, soma = 0
+    escreva(" digite 5 numeros e veja a soma total deles: \n")
+    para(i = 1; i<=5; i++){
+      escreva("digite o numero: \n")
+      leia(num1)
+      soma = num1 + soma
+      escreva("o resultado e: ", soma, "\n")
+    }
+  }
+}
