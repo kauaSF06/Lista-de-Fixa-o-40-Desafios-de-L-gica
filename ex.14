@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    inteiro senha, senhadigitada
+    senha = 1234
+    escreva("digite sua senha: \n")
+    enquanto(senhadigitada != senha){
+      leia(senhadigitada)
+      se (senhadigitada!=senha){
+        escreva("senha incorreta, digite novamente\n")
+        }
+        senao
+        escreva("senha correta, bem vindo(a)")
+    } 
+    
+  }
+}
