@@ -1,0 +1,24 @@
+programa {
+	funcao inicio() {
+		inteiro numero
+		inteiro contadorDivisores = 0
+		inteiro i
+		
+		escreva("Digite um número inteiro positivo: ")
+		leia(numero)
+		
+		para(i = 1; i <= numero; i++) {
+			se (numero % i == 0) {
+				contadorDivisores = contadorDivisores + 1
+			}
+		}
+		
+		escreva("\nO número ", numero, " tem ", contadorDivisores, " divisores.\n")
+		
+		se (contadorDivisores == 2) {
+			escreva("Portanto, ", numero, " **É UM NÚMERO PRIMO**! 🎉\n")
+		} senao {
+			escreva("Portanto, ", numero, " **NÃO É UM NÚMERO PRIMO**.\n")
+		}
+	}
+}
