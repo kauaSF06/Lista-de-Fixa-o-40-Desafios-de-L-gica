@@ -1,0 +1,11 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real num1
+    inteiro resultado
+    escreva("digite um numero")
+    leia(num1)
+    resultado = mat.arredondar(num1 ,2 )
+    escreva("o numero arredondado e: ", resultado)
+  }
+}
