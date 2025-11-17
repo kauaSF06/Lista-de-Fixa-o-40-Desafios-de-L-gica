@@ -1,0 +1,17 @@
+programa {
+	
+
+	funcao vazio saudacao(cadeia nome) {
+		escreva("Olá, ", nome, "!\n")
+	}
+
+	funcao inicio() {
+		escreva("--- Início do Programa ---\n")
+		
+		saudacao("Maria")
+		
+		saudacao("João")
+		
+		escreva("--- Fim do Programa ---\n")
+	}
+}
