@@ -1,0 +1,27 @@
+programa {
+	inclua biblioteca Matematica --> mat 
+	funcao inicio() {
+		real capital, taxa, tempo, montante
+		
+		escreva("--- Cálculo de Juros Compostos ---\n")
+		
+		escreva("Digite o Capital inicial (C): ")
+		leia(capital)
+		
+		escreva("Digite a Taxa de Juros (i, ex: 0.05 para 5%): ")
+		leia(taxa)
+		
+		escreva("Digite o Tempo (t, em períodos da taxa): ")
+		leia(tempo)
+		
+		montante = capital * mat.potencia((1.0 + taxa), tempo)
+		
+		// 5. Exibe o resultado
+		escreva("\n")
+		escreva("--- Resultado ---\n")
+		escreva("Capital Aplicado: R$ ", capital, "\n")
+		escreva("Taxa Anual: ", taxa * 100.0, "%\n")
+		escreva("Montante Final (M): R$ ", montante, "\n")
+		
+	}
+}
