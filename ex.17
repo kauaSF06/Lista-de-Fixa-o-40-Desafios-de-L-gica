@@ -1,0 +1,19 @@
+programa {
+	funcao inicio() {
+	
+		inteiro num1, i, resultado
+		
+		resultado = 1 
+		
+		escreva("Escreva um número para calcular o fatorial: \n")
+		leia(num1)
+
+		
+		para(i = num1; i >= 1; i--){
+		
+			resultado = resultado * i
+		}
+		
+		escreva("O resultado do fatorial de ", num1, " é: ", resultado)
+	}
+}
