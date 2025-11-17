@@ -1,0 +1,18 @@
+programa {
+  funcao vazio analisarmedia( real media){
+    se(media >7.0){
+      escreva("aprovado")
+
+    }senao se((media <7.0) e (media >=5.0)){
+      escreva("recuperaçao")
+    }senao{
+      escreva(" reprovado")
+    }
+  }
+  funcao inicio() {
+    real nota
+    escreva("digite sua nota: ")
+    leia(nota)
+    analisarmedia(nota)
+  }
+}
