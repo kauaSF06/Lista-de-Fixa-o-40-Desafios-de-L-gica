@@ -1,0 +1,13 @@
+programa {
+  funcao vazio mostrarlinhas(){
+    escreva("================================")
+  }
+  funcao inicio() {
+    escreva("meu nome e kaua dos santos\n")
+    mostrarlinhas()
+    escreva("tenho 19 anos\n")
+    mostrarlinhas()
+    escreva("moro em belo horizonte\n")
+    mostrarlinhas()
+  }
+}
