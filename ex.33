@@ -1,0 +1,33 @@
+programa
+{
+    
+    funcao real calcularMedia(real n1, real n2, real n3)
+    {
+        real media
+        
+        media = (n1 + n2 + n3) / 3.0 
+    
+        retorne media
+    }
+    
+   
+    funcao inicio()
+    {
+        real nota1, nota2, nota3, media_final
+        
+        escreva("--- Calculadora de Média ---\n")
+        
+        escreva("Digite a primeira nota: ")
+        leia(nota1)
+        
+        escreva("Digite a segunda nota: ")
+        leia(nota2)
+        
+        escreva("Digite a terceira nota: ")
+        leia(nota3)
+        
+        media_final = calcularMedia(nota1, nota2, nota3)
+        
+        escreva("\nA média das notas é: ", media_final, "\n")
+    }
+}
