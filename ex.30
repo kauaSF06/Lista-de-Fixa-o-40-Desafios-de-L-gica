@@ -1,0 +1,25 @@
+
+programa
+{
+    funcao vazio mostrarTabuada(inteiro numero)
+    {
+        inteiro i 
+        
+        escreva("--- Tabuada de ", numero, " ---\n")
+        
+        para(i = 1; i <= 10; i++) {
+            escreva(numero, " x ", i, " = ", numero * i, "\n")
+        }
+    }
+    
+    
+     
+    funcao inicio() {
+        inteiro num
+        
+        escreva("Digite o número para ver a tabuada: ")
+        leia(num)
+        
+        mostrarTabuada(num)
+    }
+}
