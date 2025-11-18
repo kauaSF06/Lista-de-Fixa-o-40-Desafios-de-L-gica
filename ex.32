@@ -1,0 +1,35 @@
+programa
+{
+ 
+    funcao vazio gerarTicket(cadeia evento, cadeia usuario, inteiro assento)
+    {
+        cadeia linha = "========================================="
+        
+        escreva("\n")
+        escreva(linha, "\n")
+        escreva("         T I C K E T   D E   E N T R A D A\n")
+        escreva(linha, "\n")
+        
+        escreva("EVENTO:  ", evento, "\n")
+        escreva("-----------------------------------------\n")
+        escreva("TITULAR: ", usuario, "\n")
+        escreva("-----------------------------------------\n")
+        escreva("ASSENTO: ", assento, "\n")
+        escreva(linha, "\n")
+        escreva("       Apresente este código na entrada!\n")
+        escreva(linha, "\n")
+    }
+    
+    funcao inicio()
+    {
+        cadeia nomeEvento = "Show da Banda Turbo"
+        cadeia nomeUsuario = "João da Silva"
+        inteiro numAssento = 145
+        
+        escreva("Gerando Ticket...\n")
+        
+        gerarTicket(nomeEvento, nomeUsuario, numAssento)
+        
+        escreva("\nProcesso finalizado.\n")
+    }
+}
