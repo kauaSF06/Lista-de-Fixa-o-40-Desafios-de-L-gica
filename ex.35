@@ -1,0 +1,19 @@
+programa {
+  funcao logico ehMaiorDeIdade(inteiro idade){
+    se(idade>=18){
+      retorne verdadeiro
+    }senao
+    retorne falso
+  }
+  funcao inicio() {
+    inteiro anos
+    logico resultado
+    escreva("escreva sua idade \n")
+    leia(anos)
+    se(resultado == verdadeiro){
+      escreva("verdadeiro")
+    }senao{
+      escreva("falso")
+    }
+  }
+}
