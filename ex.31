@@ -1,0 +1,41 @@
+programa
+{
+   
+    funcao vazio calcularIMC(real peso, real altura)
+    {
+        real imc 
+
+        se (altura > 0.0) {
+            imc = peso / (altura * altura)
+            escreva("\nSeu IMC é: ", imc, "\n")
+            escreva("Classificação: ")
+
+            se (imc < 18.5) {
+                escreva("Abaixo do peso.\n")
+            } senao se (imc <= 24.9) {
+                escreva("Peso normal.\n")
+            } senao se (imc <= 29.9) {
+                escreva("Sobrepeso.\n")
+            } senao se (imc <= 34.9) {
+                escreva("Obesidade Grau I.\n")
+            } senao se (imc <= 39.9) {
+                escreva("Obesidade Grau II (Severa).\n")
+            } senao {
+                escreva("Obesidade Grau III (Mórbida).\n")
+            }
+        } senao {
+            escreva("\nERRO: A altura não pode ser zero. Não foi possível calcular o IMC.\n")
+        }
+    }
+    
+    
+    funcao inicio()
+    {
+        real p, a 
+        escreva("--- Calculadora de IMC ---\n")
+        escreva("Digite seu peso (em kg): ")
+        leia(p)
+        escreva("Digite sua altura (em metros, ex: 1.75): ")
+        leia(a)
+        
+        calcularIMC(p, a)
